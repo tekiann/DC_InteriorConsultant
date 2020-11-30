@@ -1,0 +1,50 @@
+body{    
+    background-color: #181719;
+}
+
+.nav button{
+    position: fixed;
+    padding: 10px;
+    border: solid white 1px;
+    color: white;
+    background-color:transparent;
+    font-style: normal;
+    font-family: Crimson Pro;
+    margin:15px;
+}
+.nav a{
+    color: white;    
+    text-decoration: none;
+    margin: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.nav{
+    margin-top: 15px;
+    position: sticky;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    float:right
+}
+.icon{
+    display:none
+}
+
+@media screen and (max-width: 600px) {
+  .menu{
+      display:none
+  }
+  .icon{
+      float:right;
+      display:initial;
+  }
+  .icon:focus{
+      display:initial;
+
+  } 
+  
+}
