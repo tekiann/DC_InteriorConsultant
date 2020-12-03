@@ -4,38 +4,66 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="nav_style.css">
+	<link rel="stylesheet" href="container_style.css">
 	<link rel="icon" href="/devchallenges.png">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 	<title>Interior Consultant</title>
 </head>
 
 <body>
 	<div class="nav">
-		<button class="nav">THIS INTERIOR</button>
-		<div class="nav">
-			<div>
-				<ul>
-					<li class="menu"><a href="#">Home</a></li>
-					<li class="menu"><a href="#">News</a></li>
-					<li class="menu"><a href="#">Contact</a></li>
-					<li class="menu"><a href="#">About</a></li>
-					<li class="icon"><a href="#"><i class='fas fa-bars' style='font-size:30px;color:white'>
-                    </i></a>
-                        
-                    </li>
-
-
-				</ul>
-			</div>
-
-
+		<button>THIS INTERIOR</button>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
 		</div>
+		<button class="icon" onclick="MenuShowsUp()"><i class="fa fa-bars" style='font-size:40x;color:white;'></i>             
+            </button>
+	</div>
+	<div class="menu-mobile">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
 	</div>
 
 	<div class="container">
-
+		<div class="row-mobile">
+			<h1>Modern Interior</h1>
+			<p>A Full-Service residential & commercial interior design and staging company offering professional
+				organizing & eco-services </p>
+			<button style="margin-bottom:15px;">Read more  <span><i class='fas fa-chevron-right' style='font-size:25x;color:white;margin: auto'></i></span> </button>
+		</div>
+		<div class="row-mobile">
+			<div>
+				<img src="photo1.png" alt="photo1" width="100%" height="100%">
+            </div>
+			<div class="card">
+				<div class="cardUp">
+					<div class="card1">
+						<img src="photo2.png" alt="photo2" width="50px" height="50px" style="border-radius: 100px;">
+                    </div>
+					<div class="card2">
+						<p>Aliza Webber</p>
+						<p style="margin-top:-15%;">Interior design</p>
+					</div>
+				</div>
+				<div class="cardDown">
+					<p>Designed in 2020 by Aliza Webber</p>
+				</div>
+			</div>
+		</div>
+			
 	</div>
+	<script src="style.js"></script>
 
 </body>
 
